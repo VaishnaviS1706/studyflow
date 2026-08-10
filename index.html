@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFlow - Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>StudyFlow</h1>
+            <p>Organize your studies. Stay consistent.</p>
+        </header>
+
+        <section class="task-form">
+
+            <input type="text" id="taskInput" placeholder="Enter your task...">
+
+            <input type="text" id="subjectInput" placeholder="Subject">
+
+            <select id="priorityInput">
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+
+            <input type="date" id="dateInput">
+
+            <button id="addTaskBtn">Add Task</button>
+
+        </section>
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="activeTasks">0</h3>
+                <p>Active</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+        </section>
+
+        <section class="filters">
+
+            <button class="filter-btn" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+
+        </section>
+
+
+        <section id="taskList">
+
+            <!-- Tasks will be added here using JavaScript -->
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
